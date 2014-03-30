@@ -1,0 +1,17 @@
+{
+    "name": "wake-up-app",
+    "comName":"WakeUpApp",
+    "version": "1.0.0",
+    "desc": "手机浏览器页面唤醒客户端",
+    "tag":"kissy-mini",
+    "githubName":"minghe",
+    "author": {
+        "name": "明河",
+        "email": "jianping.xwh@taobao.com",
+        "page": ""
+    },
+	"flexComboPort":"81",
+	"reserveServerPort":"8080",
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}
