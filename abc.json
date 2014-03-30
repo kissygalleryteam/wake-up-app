@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "desc": "手机浏览器页面唤醒客户端",
     "tag":"kissy-mini",
+    "beta":true,
     "githubName":"minghe",
     "author": {
         "name": "明河",

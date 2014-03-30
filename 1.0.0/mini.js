@@ -65,7 +65,7 @@ KISSY.add(function (S, require) {
             //其他的生成个iframe，设置iframe的src
             if(ua.chrome && ua.android){
                 setTimeout(function(){
-                    _location(oUrl.toString());
+                    self._location(oUrl.toString());
                 }, 100);
             }else{
                 self._callInIframe(oUrl.toString());
