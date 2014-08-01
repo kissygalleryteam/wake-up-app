@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>WakeUpApp的demo</title>
+    <script src="http://g.tbcdn.cn/kissy/m/0.2.0/mini-full-min.js" charset="utf-8"></script>
+</head>
+<body>
+<h2>WakeUpApp的demo</h2>
+<script>
+    (function(S) {
+        var debug = ~location.search.indexOf('ks-debug');
+
+        if (debug) {
+            var srcPath = "../../";
+            S.config({
+                debug: debug,
+                packages:[
+                    {
+                        name:"kg/wake-up-app",
+                        path:srcPath,
+                        charset:"utf-8",
+                        ignorePackageNameInUri:true
+                    }
+                ]
+            });
+        }
+
+        S.use('kg/wake-up-app/2.0.0/mini,kg/wake-up-app/2.0.0/app/taobao', function (S, WakeUpApp,Taobao) {
+            new WakeUpApp({app: new Taobao()}).render('taobaowebview://m.taobao.com/?weburl='+location.href);
+        })
+    })(KISSY);
+</script>
+</body>
+</html>
